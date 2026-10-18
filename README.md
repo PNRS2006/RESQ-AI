@@ -132,7 +132,7 @@ The ResQ-AI Streamlit Command Center features 5 dedicated operational tabs:
 - IBM Snap ML acceleration status and ONNX Runtime fallback indicators.
 - Live latency distribution (p50, p90, p95, p99 micro-benchmarks).
 
-*(Screenshots will be captured and documented in `docs/screenshots/`)*
+![ResQ-AI Emergency Operations Command Center](docs/screenshots/resq_dashboard_overview.jpg)
 
 ---
 
