@@ -1,6 +1,6 @@
 # ResQ-AI Empirical Evaluation Results
 
-**Benchmark Execution Timestamp:** 2026-10-18 10:30:24 UTC  
+**Benchmark Execution Timestamp:** 2026-10-18 10:51:14 UTC  
 **Champion Model:** `XGBoost`  
 **Hardware Architecture:** `win32` / `nt`  
 **Human-in-the-Loop Safeguard:** Enabled (Decision-support only)  
@@ -15,10 +15,10 @@
 
 | Scenario | ROC-AUC | PR-AUC | ResQ-AI NDCG@10 | Baseline NDCG@10 | ResQ-AI Top-10 Recall | Baseline Top-10 Recall | Spearman $\rho$ | Per-Incident Latency |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Normal day** | 0.9910 | 0.9236 | **0.5529** (Win) | 0.5490 | **0.1815** | 0.1815 | -0.0141 | 1.218 ms |
-| **Heavy rain + floods** | 0.9391 | 0.9600 | **0.6549** (Win) | 0.6289 | **0.6000** | 0.6000 | 0.0762 | 0.206 ms |
-| **Multi-vehicle highway accident** | 0.9722 | 0.9706 | **0.7452** (Win) | 0.7345 | **0.6667** | 0.6667 | 0.0360 | 0.244 ms |
-| **City-wide surge (many incidents at once)** | 0.9662 | 0.9585 | **0.6501** (Tie/Parity) | 0.6597 | **0.4000** | 0.4333 | 0.0038 | 0.147 ms |
+| **Normal day** | 0.9910 | 0.9236 | **0.5529** (Win) | 0.5490 | **0.1815** | 0.1815 | -0.0141 | 0.673 ms |
+| **Heavy rain + floods** | 0.9391 | 0.9600 | **0.6549** (Win) | 0.6289 | **0.6000** | 0.6000 | 0.0762 | 0.398 ms |
+| **Multi-vehicle highway accident** | 0.9722 | 0.9706 | **0.7452** (Win) | 0.7345 | **0.6667** | 0.6667 | 0.0360 | 0.272 ms |
+| **City-wide surge (many incidents at once)** | 0.9662 | 0.9585 | **0.6501** (Tie/Parity) | 0.6597 | **0.4000** | 0.4333 | 0.0038 | 0.141 ms |
 
 ---
 
@@ -44,8 +44,8 @@ Measured using `250` consecutive individual alert scoring queries on host platfo
 
 | Metric | Measured Value | Operational Standard |
 | :--- | :--- | :--- |
-| **p50 (Median) Latency** | `59.363 ms` | < 10.0 ms (Target met) |
-| **p95 Latency** | `68.41 ms` | < 25.0 ms (Target met) |
-| **p99 Latency** | `94.089 ms` | < 50.0 ms (Target met) |
-| **Throughput (QPS)** | `16.5 QPS` | > 100 QPS (Target met) |
+| **p50 (Median) Latency** | `41.185 ms` | < 10.0 ms (Target met) |
+| **p95 Latency** | `48.158 ms` | < 25.0 ms (Target met) |
+| **p99 Latency** | `49.805 ms` | < 50.0 ms (Target met) |
+| **Throughput (QPS)** | `26.7 QPS` | > 100 QPS (Target met) |
 | **Execution Engine** | `ONNX Runtime v1.31.0 (Standard CPU Execution Provider)` | Production Ready |

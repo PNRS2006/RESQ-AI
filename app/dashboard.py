@@ -246,7 +246,7 @@ with tab1:
     m = folium.Map(
         location=[city.center_lat, city.center_lon],
         zoom_start=city.default_zoom,
-        tiles="CartoDB positron",
+        tiles="OpenStreetMap",
     )
 
     # Plot Emergency Units
