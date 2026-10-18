@@ -1,0 +1,29 @@
+{
+  "model_name": "XGBoost",
+  "n_features": 22,
+  "features": [
+    "severity",
+    "people_affected",
+    "traffic_congestion",
+    "temperature_c",
+    "rain_mm",
+    "wind_kmh",
+    "visibility_km",
+    "rain_x_congestion",
+    "casualty_severity_ratio",
+    "visibility_hazard",
+    "is_highway_bridge",
+    "hour_of_day",
+    "is_night_or_rush",
+    "type_road_accident",
+    "type_fire",
+    "type_flood",
+    "type_medical_emergency",
+    "type_building_collapse",
+    "road_highway",
+    "road_arterial",
+    "road_local",
+    "road_bridge"
+  ],
+  "export_status": "PORTABLE_FALLBACK"
+}

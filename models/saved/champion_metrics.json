@@ -1,0 +1,8 @@
+{
+  "model_name": "XGBoost",
+  "roc_auc": 0.9817,
+  "pr_auc": 0.8998,
+  "f1_score": 0.7778,
+  "accuracy": 0.9565,
+  "brier_score": 0.0315
+}
